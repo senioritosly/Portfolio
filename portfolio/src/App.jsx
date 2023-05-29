@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 // Pages
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
+import About from './pages/About/About'
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/projects" element={<Projects />} />
+      </Routes>
+      <Routes>
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   )
