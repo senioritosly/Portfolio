@@ -4,25 +4,26 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0f0c09;
+  background-color: var(--color2);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --color1: #ef3453;
-  --color2: #f89c1f;
-  --color3: #F1FF84;
-  --color4: #00e874;
-  --color5: #00ccff;
-  --color6: #b832ca;
+  --color1: #F1FF84;
+  --color2: #93cbff;
+}
+
+@font-face {
+  font-family: 'Soft Marshmallow';
+  src: url('./../public/fonts/Soft\ Marshmallow.otf');
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Avenir-World-for-Disney-Demi,sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Soft Marshmallow';
 }
