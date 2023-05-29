@@ -1,4 +1,5 @@
-.navbarItems {
+/* NavBar.module.css */
+.navBarItems {
     display: flex;
     align-items: center;
     padding: 0 12px;
@@ -23,51 +24,17 @@
     }
 }
 
-/* .item:before {
-    position: absolute;
-    background-color: #000;
-    border-radius: 0 0 0.25rem 0.25rem;
-    bottom: -0.375rem;
-    content: "";
-    height: 0.125rem;
-    left: 0px;
-    opacity: 0;
-    right: 0px;
-    transform-origin: left center;
-    transform: scaleX(0);
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-    visibility: hidden;
-    width: auto;
-} */
-
-.item:before {
-    position: absolute;
-    background-color: #000;
-    content: "";
-    opacity: 0;
-    transform: scaleX(0);
-    transition: all 0.3s 0s;
-    visibility: hidden;
-    width: auto;
-}
-
-.navbarItems:hover .item:before {
-    transform: scaleX(1);
-    visibility: visible;
-    opacity: 1 !important;
-}
-
-.navbarItems:hover {
+.navBarItems_active {
     background-color: #000;
 }
-
-.navbarItems:hover .item {
+.item_active {
     color: #fff;
 }
 
+.navBarItems:hover {
+    background-color: #000;
+}
 
-/* .navbarItems:hover .item:before {
-    transform: scaleX(1);
-    visibility: visible;
-    opacity: 1 !important;
-} */
+.navBarItems:hover .item {
+    color: #fff;
+}

@@ -1,10 +1,11 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import mascot from '../../assets/Sir_Sly_Mascot.svg'
 import NavBarItem from '../NavBarItem/NavBarItem'
 
 const NavBar = () => {
+  const location = useLocation()
 
   const menu = [
     {
@@ -31,7 +32,7 @@ const NavBar = () => {
         </div>
         <div className={styles.menu}>
           {menu.map((item) => (
-            <NavBarItem name={item.name} link={item.link} />
+            <NavBarItem name={item.name} link={item.link} active={location.pathname === item.link} />
           ))}
         </div>
       </div>
