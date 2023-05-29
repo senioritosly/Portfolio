@@ -1,11 +1,10 @@
 :root {
-  font-family: 'Baloo Thambi 2', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #fff;
+  background-color: #0f0c09;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,19 +13,16 @@
   -webkit-text-size-adjust: 100%;
   --color1: #ef3453;
   --color2: #f89c1f;
-  --color3: #fef625;
+  --color3: #F1FF84;
   --color4: #00e874;
   --color5: #00ccff;
   --color6: #b832ca;
 }
 
 body {
-  margin: 0;
   min-width: 320px;
-  min-height: 100vh;;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  min-height: 100vh;
+  font-family: Avenir-World-for-Disney-Demi,sans-serif;
+  margin: 0;
+  padding: 0;
 }

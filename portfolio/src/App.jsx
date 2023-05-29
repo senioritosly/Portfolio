@@ -6,7 +6,8 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 // Pages
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
+import Projects from './pages/Projects/Projects'
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </>
   )
