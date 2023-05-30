@@ -1,0 +1,66 @@
+.section_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30rem; 
+}
+
+.main_section {
+    position: relative;
+    width: 80%;
+    display: grid;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 8px solid #000;
+    padding: 2rem 3rem;
+}
+
+.glob {
+    position: absolute;
+    top: -7.3rem;
+    left: -6rem;
+    width: 12rem;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.glob_banner {
+    height: 20rem;
+    width: 100%;
+    background-image: url('./../../assets/images/glob_banner.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.candy_glob {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-size: 6rem;
+    color: #000;
+    margin: 0;
+    margin-bottom: -2rem;
+    /* -webkit-text-stroke: 3px black; */
+}
+
+.span {
+    margin-top: 1.5rem;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 100;
+    /* -webkit-text-stroke: 2px black; */
+}
