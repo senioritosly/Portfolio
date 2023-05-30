@@ -1,5 +1,22 @@
 .home_container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
+}
+
+.section_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: #308de4;
+    border-top: 5px solid #000;
 }
