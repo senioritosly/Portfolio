@@ -6,6 +6,11 @@
   background-size: auto 100%;
   background-repeat: repeat-x;
   background-position: left top;
+  text-shadow:
+    -8px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .main_section_container {
@@ -27,6 +32,6 @@
 }
 
 .title {
-    font-size: 5rem;
-    margin: 3rem 3rem;
+  font-size: 5rem;
+  margin: 3rem 3rem;
 }
