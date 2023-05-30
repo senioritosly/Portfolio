@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Soft Marshmallow';
-  src: url('./../public/fonts/Soft\ Marshmallow.otf');
+  src: url('/fonts/Soft\ Marshmallow.otf');
 }
 
 body {
