@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Section.module.css'
-import glob from './../../assets/images/eating_glob.svg'
-import glob_banner from './../../assets/images/glob_banner.svg'
+import glob from './../../assets/images/eating_glob_purple.svg'
 
 const Section = () => {
     return (
