@@ -12,20 +12,28 @@ const Footer = () => {
                 <h2>Mario Cristales</h2>
                 <div className={styles.details_grid}>
                     <div className={styles.detail}>
-                        <GrInstagram />
-                        <p>Instagram</p>
+                        <a className={styles.link} href='https://www.instagram.com/mariocr_c/' target='_blank'>
+                            <GrInstagram />
+                            <p>Instagram</p>
+                        </a>
                     </div>
                     <div className={styles.detail}>
-                        <BsTwitter />
-                        <p>Twitter</p>
+                        <a className={styles.link} href='https://twitter.com/sr_slyy' target='_blank'>
+                            <BsTwitter />
+                            <p>Twitter</p>
+                        </a>
                     </div>
                     <div className={styles.detail}>
-                        <HiOutlineInformationCircle />
-                        <p>About Me</p>
+                        <a className={styles.link} href='/about'>
+                            <HiOutlineInformationCircle />
+                            <p>About Me</p>
+                        </a>
                     </div>
                     <div className={styles.detail}>
-                        <TbMail />
-                        <p>Contact</p>
+                        <a className={styles.link} href='/contact'>
+                            <TbMail />
+                            <p>Contact</p>
+                        </a>
                     </div>
                 </div>
                 <p>© 2023 Mario Cristales. All Rights Reserved.</p>

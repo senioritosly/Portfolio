@@ -29,14 +29,27 @@
     cursor: pointer;
 }
 
+.detail:hover a,
+.detail:hover {
+    color: #ffc0ef;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     margin-bottom: 0;
+    cursor: default;
 }
 
 p {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
-.detail:hover {
-    color: #ffc0ef;
+a {
+    color: #fff;
+    text-decoration: none;
 }
