@@ -3,7 +3,7 @@ import styles from './Slider.module.css'
 import PropTypes from 'prop-types'
 
 // Imports for React
-import { useState, useEffect } from 'react'
+import { FiExternalLink } from 'react-icons/fi'
 
 // Default theme
 import { Splide, SplideSlide } from '@splidejs/react-splide'
@@ -35,9 +35,13 @@ const Slider = () => {
               <div className={styles.content_container}>
                 <h2 className={styles.project_title}>Disney+ Clone</h2>
                 <p className={styles.content_p}>
-                  The Disney+ clone is a fully functional web application that mirrors the user interface of the beloved streaming platform. 
-                Leveraging the power of React, a versatile JavaScript library, and Vite, a fast and optimized build tool, 
-                I was able to create a seamless user experience.</p>
+                  The Disney+ clone is a fully functional web application that mirrors the user interface of the beloved streaming platform.
+                  Leveraging the power of React, a versatile JavaScript library, and Vite, a fast and optimized build tool,
+                  I was able to create a seamless user experience.</p>
+                <a className={styles.project_link} href='/projects'>
+                  <span className={styles.learn_more}>Learn more</span>
+                  <FiExternalLink />
+                </a>
               </div>
               <div className={styles.preview_container}>
                 <img className={styles.project_preview} src={disney} alt='proyecto' />
@@ -47,8 +51,15 @@ const Slider = () => {
           <SplideSlide>
             <div className={styles.slide}>
               <div className={styles.content_container}>
-                <h2 className={styles.project_title}>Calculator</h2>
-                <p className={styles.content_p}>This is a Disney+ Clone using React + Vite</p>
+                <h2 className={styles.project_title}>Maze</h2>
+                <p className={styles.content_p}>
+                  The maze project is a web application that allows users to solve a virtual maze.
+                  By using data fetched from a maze API, I dynamically generate the maze layout, rendering each tile with customized sprites.
+                  This project allows users to solve mazes, and change various settings according to their preferences.</p>
+                <a className={styles.project_link} href='/projects'>
+                  <span className={styles.learn_more}>Learn more</span>
+                  <FiExternalLink />
+                </a>
               </div>
               <div className={styles.preview_container}>
                 <img className={styles.project_preview} src={maze} alt='proyecto' />
@@ -68,7 +79,6 @@ const Slider = () => {
 }
 
 Slider.propTypes = {
-  glob: PropTypes.oneOf(['thinking']),
   title: PropTypes.string,
   content: PropTypes.string
 }
