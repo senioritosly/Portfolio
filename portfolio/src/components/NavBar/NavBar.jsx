@@ -3,9 +3,24 @@ import { useLocation } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import mascot from '../../assets/Sir_Sly_Mascot.svg'
 import NavBarItem from '../NavBarItem/NavBarItem'
+import { useState, useEffect } from 'react'
 
 const NavBar = () => {
   const location = useLocation()
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const menu = [
     {
@@ -23,7 +38,7 @@ const NavBar = () => {
   ]
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${isScrolled ? styles['navbar--scrolled'] : ''}`}>
       <div className={styles.navbar_container}>
         <div className={styles.navbar_logo}>
           <a className={styles.logo} href="/">
