@@ -94,6 +94,7 @@
     justify-content: flex-end;
     align-items: center;
     color: #000;
+    cursor: url('./../../assets/link_select.svg'), auto;
 }
 
 .learn_more {
@@ -101,4 +102,5 @@
     font-weight: 700;
     margin-top: 0;
     text-decoration: none;
+    cursor: url('./../../assets/link_select.svg'), auto;
 }

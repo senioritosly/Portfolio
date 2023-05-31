@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: url('./../../assets/link_select.svg'), auto;
 }
 
 .detail:hover a,
@@ -40,11 +40,11 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
+    cursor: url('./../../assets/link_select.svg'), auto;
 }
 
 .footer_name {
     margin-bottom: 0;
-    cursor: default;
 }
 
 .footer_p {
