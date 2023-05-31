@@ -7,21 +7,26 @@ import NavBar from "../../components/NavBar/NavBar"
 import WelcomeBanner from "../../components/WelcomeBanner/WelcomeBanner"
 import Footer from "../../components/Footer/Footer"
 import Divider from "../../components/Divider/Divider"
+import Slider from "../../components/Slider/Slider"
 
 const Home = () => {
+
     return (
         <>
             <div className={styles.home_container}>
                 <NavBar />
                 <WelcomeBanner />
+                <Divider>Who?</Divider>
                 <div className={styles.section_wrapper}>
-                    <Divider>Who?</Divider>
                     <Section />
-                    <Divider>What?</Divider>
-                    <footer className={styles.footer}>
-                        <Footer />
-                    </footer>
                 </div>
+                <Divider>What?</Divider>
+                <div className={styles.slider_container}>
+                    <Slider />
+                </div>
+                <footer className={styles.footer}>
+                    <Footer />
+                </footer>
             </div>
         </>
     )

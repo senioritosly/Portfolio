@@ -12,6 +12,13 @@
     flex-direction: column;
 }
 
+.slider_container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     margin-top: auto;
     background-color: #308de4;
