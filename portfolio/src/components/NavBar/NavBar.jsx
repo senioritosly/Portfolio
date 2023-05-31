@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 const NavBar = () => {
   const location = useLocation()
   const [isScrolled, setIsScrolled] = useState(false)
+  const notHome = location.pathname != '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,8 +38,9 @@ const NavBar = () => {
     },
   ]
 
+
   return (
-    <div className={`${styles.navbar} ${isScrolled ? styles['navbar--scrolled'] : ''}`}>
+    <div className={`${styles.navbar} ${isScrolled ? styles['navbar--scrolled'] : ''} ${notHome ? styles['navbar--notHome'] : ''}`}>
       <div className={styles.navbar_container}>
         <div className={styles.navbar_logo}>
           <a className={styles.logo} href="/">
