@@ -9,34 +9,34 @@ const Footer = () => {
     return (
         <div className={styles.footer_container}>
             <div className={styles.details}>
-                <h2>Mario Cristales</h2>
+                <h2 className={styles.footer_name}>Mario Cristales</h2>
                 <div className={styles.details_grid}>
                     <div className={styles.detail}>
                         <a className={styles.link} href='https://www.instagram.com/mariocr_c/' target='_blank'>
                             <GrInstagram />
-                            <p>Instagram</p>
+                            <p className={styles.footer_p}>Instagram</p>
                         </a>
                     </div>
                     <div className={styles.detail}>
                         <a className={styles.link} href='https://twitter.com/sr_slyy' target='_blank'>
                             <BsTwitter />
-                            <p>Twitter</p>
+                            <p className={styles.footer_p}>Twitter</p>
                         </a>
                     </div>
                     <div className={styles.detail}>
                         <a className={styles.link} href='/about'>
                             <HiOutlineInformationCircle />
-                            <p>About Me</p>
+                            <p className={styles.footer_p}>About Me</p>
                         </a>
                     </div>
                     <div className={styles.detail}>
                         <a className={styles.link} href='/contact'>
                             <TbMail />
-                            <p>Contact</p>
+                            <p className={styles.footer_p}>Contact</p>
                         </a>
                     </div>
                 </div>
-                <p>© 2023 Mario Cristales. All Rights Reserved.</p>
+                <p className={styles.footer_p}>© 2023 Mario Cristales. All Rights Reserved.</p>
             </div>
         </div>
     )

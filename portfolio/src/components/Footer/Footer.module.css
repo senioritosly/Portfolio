@@ -38,18 +38,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
-h2 {
+.footer_name {
     margin-bottom: 0;
     cursor: default;
 }
 
-p {
+.footer_p {
     margin-left: 0.5rem;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
 }
