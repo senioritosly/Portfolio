@@ -1,7 +1,6 @@
 .background_container {
   height: 60vh;
   width: 100vw;
-  margin-top: 6.3rem;
   background-image: url('./../../assets/images/gum_background.png');
   background-size: auto 100%;
   background-repeat: repeat-x;
