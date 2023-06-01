@@ -8,9 +8,9 @@ import glob2 from './../../assets/images/eating_glob_purple.svg'
 const Form = () => {
     return (
         <div className={styles.form_container}>
-            <img src={glob1} alt="globe" className={styles.glob_red} /> 
-            <img src={glob2} alt="globe" className={styles.glob_purple} /> 
             <div className={styles.form}>
+                <img src={glob1} alt="globe" className={styles.glob_red} />
+                <img src={glob2} alt="globe" className={styles.glob_purple} />
                 <h1 className={styles.form_title}>Get in touch</h1>
                 <p className={styles.form_description}>Fill out the form below and I'll get back to you as soon as possible.</p>
                 <form className={styles.grid_form}>

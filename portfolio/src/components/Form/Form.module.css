@@ -8,6 +8,7 @@
 }
 
 .form {
+    position: relative;
     width: 80%;
     background-color: #fff;
     padding: 0 2rem;
@@ -94,14 +95,14 @@
 /* Globs */
 .glob_red {
     position: absolute;
-    right: 2.6rem;
-    top: -8.2rem;
+    right: -7rem;
+    top: -8.5rem;
     width: 14rem;
 }
 
 .glob_purple {
     position: absolute;
-    left: 2.5rem;
-    top: -8.2rem;
+    left: -7rem;
+    top: -8.5rem;
     width: 14rem;
 }
