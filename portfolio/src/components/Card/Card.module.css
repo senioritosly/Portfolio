@@ -1,0 +1,78 @@
+.card_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_content {
+    position: relative;
+    width: 80%;
+    display: grid;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 8px solid #000;
+    padding: 2rem 3rem;
+    color: #000;
+    margin: 0 3rem;
+}
+
+/* TEXT SIDE */
+.main_text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 4rem;
+    color: #000;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.description {
+    font-size: 1.2rem;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+/* IMAGE SIDE */
+
+.portrait_container--project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.portrait_container--me {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1rem solid #000;
+}
+
+.portrait--project {
+    width: 30%;
+}
+
+.portrait--me {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
