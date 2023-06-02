@@ -35,7 +35,7 @@ const Slider = () => {
               <div className={styles.content_container}>
                 <h2 className={styles.project_title}>Disney+ Clone</h2>
                 <p className={styles.content_p}>
-                  The Disney+ clone is a fully functional web application that mirrors the user interface of the beloved streaming platform.
+                  The Disney+ clone is a web application that mirrors the user interface of the beloved streaming platform.
                   Leveraging the power of React, a versatile JavaScript library, and Vite, a fast and optimized build tool,
                   I was able to create a seamless user experience.</p>
                 <a className={styles.project_link} href='/projects'>
