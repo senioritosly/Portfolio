@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import { GrInstagram } from 'react-icons/gr'
-import { BsTwitter } from 'react-icons/bs'
+import { BsTwitter, BsGithub } from 'react-icons/bs'
 import { TbMail } from 'react-icons/tb'
 import { HiOutlineInformationCircle } from 'react-icons/hi'
 
@@ -12,9 +11,9 @@ const Footer = () => {
                 <h2 className={styles.footer_name}>Mario Cristales</h2>
                 <div className={styles.details_grid}>
                     <div className={styles.detail}>
-                        <a className={styles.link} href='https://www.instagram.com/mariocr_c/' target='_blank'>
-                            <GrInstagram />
-                            <p className={styles.footer_p}>Instagram</p>
+                        <a className={styles.link} href='https://www.github.com/senioritosly/' target='_blank'>
+                            <BsGithub />
+                            <p className={styles.footer_p}>GitHub</p>
                         </a>
                     </div>
                     <div className={styles.detail}>
